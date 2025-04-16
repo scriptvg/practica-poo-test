@@ -1,4 +1,4 @@
-from matematicas import es_primo, factorial
+from matematicas import es_primo, factorial, fibonacci
 import pytest
 
 def test_esprimo():
@@ -16,3 +16,9 @@ def test_factorial():
         factorial(-3)
     assert factorial(1) == 1
 
+def test_fibonacci():
+    assert fibonacci(0) == []
+    assert fibonacci(1) == [0]
+    assert fibonacci(5) == [0, 1, 1, 2, 3]
+    assert fibonacci(7) == [0, 1, 1, 2, 3, 5, 8]
+    

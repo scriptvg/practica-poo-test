@@ -26,4 +26,4 @@ def fibonacci(n):
         secuencia.append(secuencia[-1] + secuencia[-2])
     return secuencia[:n]
 
-print(fibonacci(10))
+print(fibonacci(3))
