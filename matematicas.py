@@ -17,3 +17,13 @@ def factorial(n):
         result *= i
     return result
 
+
+def fibonacci(n):
+    if n <= 0:
+        return []
+    secuencia = [0, 1]
+    while len(secuencia) < n:
+        secuencia.append(secuencia[-1] + secuencia[-2])
+    return secuencia[:n]
+
+print(fibonacci(10))
